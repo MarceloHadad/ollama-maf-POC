@@ -21,14 +21,7 @@ A minimal console chat app connecting to a local [Ollama](https://ollama.com) in
 ## Setup
 
 1. Clone the repo
-2. Edit `appsettings.json`:
-
-   ```json
-   {
-     "OllamaUrl": "http://localhost:11434",
-     "OllamaModel": "llama3.2:3b"
-   }
-   ```
+2. Adjust `appsettings.json` if needed (Ollama URL and model are pre-configured for a default local setup)
 
 ## Running
 
@@ -40,7 +33,7 @@ Type your message and press Enter. Type `exit` to quit.
 
 ## Configuration
 
-Settings are read from `appsettings.json` (gitignored). Environment variables override the file, which makes it easy to use in CI or containers:
+Settings are read from `appsettings.json`. Environment variables override the file, which makes it easy to use in CI or containers:
 
 | Key | Description |
 | --- | --- |
